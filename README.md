@@ -498,7 +498,6 @@ Possible domain-oriented improvements include:
 - Hero/Mission stats
 - Active mission limits per hero
 - Keep missions history after hero deletion 
-- Achievement / badge system
 - Search, filtering, endpoints
 - Multi-role permission system and RBAC
 - Notification and event systems
@@ -592,7 +591,7 @@ It focuses heavily on understanding:
 - backend design patterns
 - dependency injection
 - session lifecycle
-- authentication
+- authentication authorization
 - reusable validation architecture
 - testing workflows
 
