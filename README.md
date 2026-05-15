@@ -16,48 +16,6 @@ This project was designed as a learning-oriented but production-inspired backend
 
 ---
 
-# Features
-
-## Authentication & Authorization
-
-- User registration
-- JWT login authentication
-- Protected routes
-- Admin-only routes
-- Token validation using OAuth2PasswordBearer
-
----
-
-## Heroes Management
-
-- Create hero
-- List heroes
-- Get hero by ID
-- Update hero
-- Delete hero
-
-Business rules:
-
-- Cannot delete heroes with active missions
-- Hero existence validation
-- Authentication required for protected operations
-
----
-
-## Missions Management
-
-- Create mission
-- Assign mission to hero
-- Delete mission
-- Mission difficulty validation
-- Mission completion status
-
-Relationships:
-
-- One Hero - Many Missions
-- Many Missions - One Hero
-
----
 
 ## Database 
 
@@ -67,7 +25,7 @@ The project uses SQLite default database abstraction layer.
 
 The application was designed to support multiple SQL backends:
 
-- SQLite
+- SQLite Default
 - PostgreSQL
 - MySQL
 
@@ -234,6 +192,7 @@ Used to:
 
 - validate hero existence
 - return hero by id or HTTP_404_NOT_FOUND
+- Path dependence
 
 Reusable across:
 
@@ -269,6 +228,7 @@ EXISTED_MISSION = Annotated[
 Used to:
 - validate hero existence
 - return hero by id or HTTP_404_NOT_FOUND
+- Path Dependence
 
 Reusable across:
 
@@ -285,7 +245,7 @@ Authentication is implemented using:
 
 - JWT tokens
 - OAuth2PasswordBearer
-- Password hashing
+- Password hashing BCrypt
 - Protected dependencies
 
 ---
@@ -366,9 +326,9 @@ Request
 
 ---
 
-# Database Factory Architecture
+# Database Factory 
 
-The project experimented with production-inspired abstractions:
+The project using a lru cache instance of chosen database SQLite by default
 
 ```python
 class BaseDatabase
