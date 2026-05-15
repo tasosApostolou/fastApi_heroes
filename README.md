@@ -226,8 +226,8 @@ EXISTED_MISSION = Annotated[
 ```
 
 Used to:
-- validate hero existence
-- return hero by id or HTTP_404_NOT_FOUND
+- validate mission existence
+- return mission by id or HTTP_404_NOT_FOUND
 - Path-Parameter Dependence
 
 Reusable across:
