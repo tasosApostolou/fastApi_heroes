@@ -192,7 +192,7 @@ Used to:
 
 - validate hero existence
 - return hero by id or HTTP_404_NOT_FOUND
-- Path dependence
+- Path-parameter dependence
 
 Reusable across:
 
@@ -228,7 +228,7 @@ EXISTED_MISSION = Annotated[
 Used to:
 - validate hero existence
 - return hero by id or HTTP_404_NOT_FOUND
-- Path Dependence
+- Path-Parameter Dependence
 
 Reusable across:
 
