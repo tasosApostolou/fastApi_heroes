@@ -122,7 +122,7 @@ Stores:
 - id: int PK Auto Increment 
 - title: str
 - difficulty: int
-- completion : bool
+- completed : bool
 - hero_id: int FK Hero
 
 Relationship:
@@ -140,7 +140,7 @@ Stores:
 
 - id: int PK Auto Increment 
 - username: str
-- hashed password:  str
+- hashed_password:  str
 - is_admin: bool
 
 Used for JWT authentication.
