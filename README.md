@@ -332,7 +332,7 @@ The project using a lru cache instance of chosen database SQLite by default
 
 ```python
 class BaseDatabase
-class SQLiteDatabase
+class SQLiteDatabase ✅
 class PostgresDatabase
 class MySQLDatabase
 ```
